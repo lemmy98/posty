@@ -20,7 +20,12 @@ class RegisterController extends Controller
             'password' => 'required|confirmed',
         ]);
 
-        dd('store');
+        User::create([
+            'name' => $request->name
+        ]);
+
+
+
         //store user
         //sign user in 
         //redirect
